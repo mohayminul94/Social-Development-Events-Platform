@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light, dark;
+}
+
+:root {
+  --font-geist-sans: "Geist Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-geist-sans, sans-serif);
+}
+
+.btn-primary-custom {
+  @apply btn bg-green-600 hover:bg-green-700 text-white border-none;
+}
+
+.section-title {
+  @apply text-3xl md:text-4xl font-bold text-center mb-2;
+}
+
+.section-subtitle {
+  @apply text-center text-base-content/60 mb-10;
+}
